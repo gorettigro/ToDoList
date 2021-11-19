@@ -1,0 +1,67 @@
+.todo-card {
+    width: 22%;
+    margin-top: 2%;
+    border: 1px solid #000;
+    border-style:hidden;
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 1%;
+    height: 130px;
+    transition: all 0.3s ease;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .todo-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .todo-title {
+    font-size: 1rem;
+  }
+  
+  .todo-actions .complete {
+    color: #fff;
+    background-color: #d86c2e;
+    padding: 1% 5%;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #d86c2e;
+    border-radius: 10px;
+  }
+  
+  .todo-actions .reset {
+    color: #fff;
+    background-color: #85c5ab;
+    padding:  1% 5%;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #85c5ab;
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width: 425px) {
+    /* For cel: */
+    .tittle{font-size: xx-small;}
+    .todo-actions .complete{font-size:x-small;}
+    .todo-actions .complete{display: flex;}
+    .todo-actions .complete{justify-self: center;}
+    .todo-actions .reset{font-size: x-small;}
+    .todo-actions .reset{display: flex;}
+    .todo-actions .reset{justify-self: center;}
+  }
+
+  @media only screen and (min-width: 768px) {
+    /* For Tablet: */
+    .tittle{font-size: small;}
+    .todo-actions .complete{font-size:small;}
+    .todo-actions .reset{font-size: small;}
+  }
+
+  @media only screen and (min-width: 1024px) {
+    /* For Tablet: */
+    .tittle{font-size: 1rem;}
+    .todo-actions .complete{font-size:large;}
+    .todo-actions .reset{font-size: large;}
+  }

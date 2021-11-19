@@ -1,0 +1,88 @@
+header {
+    background-color: #b08aca;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 1%;
+  }
+
+    div .Com{
+
+      color:black;
+      background-color: #f8f7a5;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      padding: 8px 10px;
+      font-size: 1rem;
+      outline: none;
+      border: 1px solid #d86c2e;
+      border-radius: 10px;
+      margin: 0.5%;
+      position: absolute;
+      right: 14%;
+    }
+
+    div .Unc{
+      color: black;
+      background-color: #f8f7a5;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      padding: 8px 10px;
+      font-size: 1rem;
+      outline: none;
+      border: 1px solid #d86c2e;
+      border-radius: 10px;
+      margin: 0.5%;
+      position: bottom right;
+      position: absolute;
+      right: 0px
+    }
+
+    div .Al{
+      margin-left: 5%;
+      color: black;
+      background-color: #f8f7a5;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      padding: 8px 10px;
+      font-size: 1rem;
+      outline: none;
+      border: 1px solid #d86c2e;
+      border-radius: 10px;
+      margin: 0.5%;
+      position: bottom right;
+      position: absolute;
+      right: 5%
+    }
+    
+    @media only screen and (max-width: 425px) {
+      /* For cel: */
+      div .Com{font-size: x-small;}
+      div .Unc{font-size: x-small;}
+      div .Al{font-size: x-small;}
+      div .Com{right: 8rem}
+      div .Al{right: 5.5rem}
+      header .logo {font-size:20px ;}
+    }
+
+    @media only screen and (min-width: 768px) {
+      /* For Tablet: */
+      div .Com{right: 22.5%}
+      div .Al{right: 16%}
+    }
+
+    @media only screen and (min-width: 1024px) {
+      /* For compu: */
+      div .Com{font-size: 1.2rem;}
+      div .Unc{font-size: 1.2rem;;}
+      div .Al{font-size: 1.2rem;;}
+      div .Com{right: 12.3rem}
+      div .Al{right: 9rem}
+      header .logo {font-size: 50px ;}
+
+    }
